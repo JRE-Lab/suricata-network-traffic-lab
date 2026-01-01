@@ -1,0 +1,7 @@
+diff --git a/rules/local.rules b/rules/local.rules
+new file mode 100644
+index 0000000000000000000000000000000000000000..9985c3b8e2889fd74f3b73f68b906e8ac86cb56e
+--- /dev/null
++++ b/rules/local.rules
+@@ -0,0 +1 @@
++alert icmp any any -> any any (msg:"LAB ICMP Echo Request"; itype:8; sid:1000001; rev:1;)
